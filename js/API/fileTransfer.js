@@ -13,7 +13,7 @@ var fileTransfer = {
 	sendPhoto: function(path){
 		var options = new FileUploadOptions();
 		options.fileKey = "foto";
-		options.fileName = "Carlos";
+		options.fileName = "arturo";
 		options.mimeType = "image/jpeg";
 
 		var ft = new FileTransfer();
