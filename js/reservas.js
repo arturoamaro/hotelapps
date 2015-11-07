@@ -12,7 +12,7 @@ var almacen = {
         almacen.nd =nd;
         almacen.db.transaction(almacen.tablaReserva, almacen.error, almacen.exito);
         almacen.db.transaction(almacen.tablaReserva2, almacen.error, almacen.exito);
-        alert("Reserva guardada en BD");
+        alert("Reserva guardada en BD2");
     },
     error: function(e){
         alert("Error, codigo: "+e.code);
