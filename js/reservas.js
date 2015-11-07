@@ -25,7 +25,7 @@ var almacen = {
         alert("crea tabla");
     },
     tablaReserva2: function(tx){
-        tx.executeSql("insert into reservas(th,np,nh,nd) values("+almacen.th+","+almacen.np+","+almacen.nh+","+almacen.nd+") ");
+        tx.executeSql("insert into reservas(th, np, nh, nd) values("+almacen.th+","+almacen.np+","+almacen.nh+","+almacen.nd+") ");
         alert("inserta valores");
     }
     
