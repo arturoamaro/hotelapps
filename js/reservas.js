@@ -23,7 +23,7 @@ var almacen = {
     tablaReserva: function(tx){
         alert("Guardado reserva");
         tx.executeSql("create table if not exists reservas(th, np, nh, nd)");
-        tx.executeSql(" insert into reservas (th,np,nh,nd) values("+almacen.th+","+almacen.np+","+almacen.nh+","+almacen.nd+")");
+        tx.executeSql("insert into reservas (th,np,nh,nd) values("+almacen.th+","+almacen.np+","+almacen.nh+","+almacen.nd+")");
         alert("Reserva guardada en BD");
     }
     
