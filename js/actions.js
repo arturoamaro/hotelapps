@@ -9,6 +9,7 @@ var fn = {
         $('#nr1 ul[data-role = listview] a').click(fn.seleccionarTipo);
         $('#nr1 div[data-role = navbar] li').click(fn.nr1Siguiente);
         $('#nr2 div[data-role = navbar] li').click(fn.nr2Reservar);
+        conexion.eventoConectado();
 	},
 	ready:function(){
 		document.addEventListener("deviceready", fn.init, false);
