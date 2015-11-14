@@ -12,7 +12,6 @@ var almacen = {
         almacen.nd =nd;
         almacen.db.transaction(almacen.tablaReserva, almacen.error, almacen.exito);
         almacen.db.transaction(almacen.tablaReserva2, almacen.error, almacen.exito);
-        alert("Reserva guardada en BD2");
     },
     error: function(e){
         alert("Error, codigo: "+e.code);
@@ -22,10 +21,10 @@ var almacen = {
     },
     tablaReserva: function(tx){
         tx.executeSql("create table if not exists reservas(th, np, nh, nd) ");  
-        alert("crea tabla");
+
     },
     tablaReserva2: function(tx){
-        tx.executeSql("insert into reservas(th, np, nh, nd) values("+almacen.th+","+almacen.np+","+almacen.nh+","+almacen.nd+") ");
+        tx.executeSql("INSERT INTO reservas(th, np, nh, nd)  VALUES('"+almacen.th+"','"+almacen.np+"','"+almacen.nh+"','"+almacen.nd+"') ");
         alert("inserta valores");
     }
     
