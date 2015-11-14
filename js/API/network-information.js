@@ -6,6 +6,7 @@ var conexion ={
             return false;
     },
     eventoConectado:function(){
+        alert("1");
         document.addEventListener("online",almacen.syncData, false);
     }
 }

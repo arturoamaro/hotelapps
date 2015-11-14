@@ -37,6 +37,7 @@ var almacen = {
         almacen.db.transaction(almacen.tablaHistorial, almacen.error, null);
     },
     syncData: function(){
+        alert("syncData");
         almacen.db = window.openDatabase("hotelApp", "1.0", "Hotel App", 20000);
         almacen.db.transaction(almacen.leerReservas, almacen.error, almacen.reservaLeida);
     },
