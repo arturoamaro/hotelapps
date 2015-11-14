@@ -23,7 +23,7 @@ var almacen = {
         tx.executeSql("INSERT INTO reservas(th, np, nh, nd)  VALUES('"+almacen.th+"','"+almacen.np+"','"+almacen.nh+"','"+almacen.nd+"') ");
 
     },
-    tablaHistoria: function(tx){
+    tablaHistorial: function(tx){
         tx.executeSql("create table if not exists historial(th, np, nh, nd) "); 
         tx.executeSql("INSERT INTO historial(th, np, nh, nd)  VALUES('"+almacen.th+"','"+almacen.np+"','"+almacen.nh+"','"+almacen.nd+"') ");
 
@@ -47,7 +47,8 @@ var almacen = {
             }
             tx2.executeSql("DELETE FROM reservas");
         },almacen.error);
-    },reservaLeida: function(){
+    }, 
+    reservaLeida: function(){
         alert("Reservas Sincronizadas");
     }
 }
